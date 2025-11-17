@@ -3,12 +3,11 @@
     "target": "ES2020",
     "module": "CommonJS",
     "moduleResolution": "node",
-    "outDir": "dist",
-    "rootDir": "src",
-    "strict": false,
+    "outDir": "./dist",
+    "rootDir": "./src",
     "esModuleInterop": true,
-    "resolveJsonModule": true,
-    "types": ["node"]
+    "skipLibCheck": true,
+    "resolveJsonModule": true
   },
   "include": ["src"]
 }
