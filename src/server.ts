@@ -1,7 +1,8 @@
 import express from "express";
 import "dotenv/config";
 import { webhookCallback } from "grammy";
-import { bot } from "./bot.js";
+export default bot;
+import bot from "./bot";
 
 const app = express();
 app.use(express.json());

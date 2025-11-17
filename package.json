@@ -10,7 +10,8 @@
   "dependencies": {
     "dotenv": "^17.2.3",
     "express": "^4.21.2",
-    "grammy": "^1.38.3"
+    "grammy": "^1.38.3",
+    "mongoose": "^8.20.0"
   },
   "devDependencies": {
     "@types/express": "^4.17.25",
