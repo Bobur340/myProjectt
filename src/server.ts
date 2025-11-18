@@ -1,21 +1,12 @@
 import express from "express";
-import "dotenv/config";
-import { webhookCallback } from "grammy";
-export default bot;
 import bot from "./bot";
+import { webhookCallback } from "grammy";
 
 const app = express();
-app.use(express.json());
 
-// Webhook URL
+app.use(express.json());
 app.use("/webhook", webhookCallback(bot, "express"));
 
-app.get("/", (req, res) => {
-  res.send("Bot ishlayapti!");
-});
-
-const PORT = process.env.PORT || 3000;
-
-app.listen(PORT, () => {
-  console.log("Server ishga tushdi → PORT:", PORT);
+app.listen(process.env.PORT || 3000, () => {
+  console.log("Server ishladi");
 });
